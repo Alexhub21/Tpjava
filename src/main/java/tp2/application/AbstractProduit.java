@@ -19,6 +19,7 @@ public abstract class AbstractProduit implements Descriptible, Cloneable, Serial
         this.nom = nom;
         this.numProduit = numProduitCompteur++;
         this.numSerie = numSerieCompteur++;
+
     }
 
 

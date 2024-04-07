@@ -15,14 +15,23 @@ import java.util.List;
 
 public class Magasin implements Modele {
 
+    private Collection<AireI> allSections;
+    Collection<Boite> entrepot = new ArrayList<>();
+    private Descriptible charite;
 
-    private Collection<Achat> achats = new ArrayList<>();
+
+
+
 
 
     public Magasin() {
         // Instanciez les attributs nécessaires
 
+
+
+
     }
+
 
 
     @Override
@@ -37,8 +46,10 @@ public class Magasin implements Modele {
 
     @Override
     public int recevoirCommande(Collection<Boite> commande) {
+        int boiteImplacable=0;
+        entrepot.addAll(commande);
 
-        return -1;
+        return boiteImplacable;
     }
 
     public void placerProduits(Collection<Boite> boites, AireI section) {
